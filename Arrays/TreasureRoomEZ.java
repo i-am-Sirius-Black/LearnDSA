@@ -21,7 +21,7 @@ public class TreasureRoomEZ {
 
         for(int k:map.keySet()){
             //7
-            if(map.containsKey(w-k)){
+            if(map.containsKey(w-k) && map.get(w-k)!= map.get(k)){
 
                 System.out.print(map.get(k)+" "+map.get(w-k));
                 found=true;
