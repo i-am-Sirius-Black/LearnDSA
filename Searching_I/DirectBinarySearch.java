@@ -9,21 +9,22 @@ public class DirectBinarySearch {
 
         int n=sc.nextInt();
         int q=sc.nextInt();
-        int arr[] = new int[n];
-        int l=-1, r=n;
+        int[] arr = new int[n];
+        int l=-1;
         // input array
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
 
-        for(int i=0;i<n;i++){
+        for(int i=0;i<q;i++){
             int x=sc.nextInt();
-            System.out.println(searchElement(x,l,r,arr));
+            System.out.println();
+            System.out.print(searchElement(x,l,n,arr));
         }
 
     }
 
-    public static int searchElement(int x,int l, int r,int arr[]){
+    public static int searchElement(int x,int l, int r,int[] arr){
         while(l+1<r){
             int mid=(l+r)/2;
             if(predicate(arr,mid,x)==0){
@@ -35,7 +36,7 @@ public class DirectBinarySearch {
         return l;
     }
 
-    public static int predicate(int arr[],int mid,int x){
+    public static int predicate(int[] arr,int mid,int x){
         if(arr[mid]<=x){
             return 0;
         }else
