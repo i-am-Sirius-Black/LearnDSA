@@ -8,8 +8,7 @@ public class TableLookup {
         int n=sc.nextInt();
         int m=sc.nextInt();
         int target=sc.nextInt();
-
-        int table[][]=new int[n][m];
+        int[][] table=new int[n][m];
 
         for(int i=0;i<n;i++){
 

@@ -1,2 +1,5 @@
-package RangeSum_Sphinx;public class WallPainting {
+package RangeSum_Sphinx;
+
+public class WallPainting {
+
 }
